@@ -9,7 +9,6 @@
     body {
       font-family: 'Nunito', sans-serif;
       margin: 0;
-      padding: 0 10px; /* can change this or set to 0 if you want full edge-to-edge text */
       line-height: 1.6;
       background: #f9f9f9;
       color: #333;
@@ -53,6 +52,12 @@
       border-bottom-color: #FFD700; /* gold underline for active page */
     }
 
+    .content {
+      padding: 0 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
     h1 {
       color: #3A5A40;
       text-align: center;
@@ -63,7 +68,16 @@
     h2 {
       color: #3A5A40;
     }
+
+    .subtitle {
+      text-align: center;
+    }
     
+    .intro {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+   
     a {
       color: #007acc;
       text-decoration: none;
@@ -82,7 +96,7 @@
   </style>
 </head>
 <body>
-  <nav>
+  <nav role="navigation" aria-label="Main navigation">
     <div class="container">
       <a href="index.html" class="active">Home</a>
       <a href="cv.html">CV</a>
@@ -90,12 +104,12 @@
     </div>
   </nav>
 
-  <h1>Melinda C Somers</h1>
-  <h2>Lab Manager at Georgetown University</h2>
-  <p>UNC Chapel Hill alum  |  aspiring social psychology PhD</p>
-
-  <h2>Research Interests</h2>
-  <p>empathy, altruism, prosocial behavior, wellbeing</p>
+  <div class="intro">
+    <h1>Melinda C Somers</h1>
+    <h2>Lab Manager at Georgetown University</h2>
+    <p>UNC Chapel Hill alum  |  aspiring social psychology PhD</p>
+    <h2>Research Interests</h2>
+    <p>empathy, altruism, prosocial behavior, wellbeing</p>
 
   <footer>
     &copy; 2025 Melinda Somers
