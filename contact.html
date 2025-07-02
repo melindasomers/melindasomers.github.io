@@ -19,9 +19,9 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      width: 100vw; /* full viewport width */
-      left: 0;
-      box-sizing: border-box;
+      width: 100%; /* Full width */
+      margin: 0;
+      padding: 0;
     }
 
     nav .container {
@@ -47,9 +47,8 @@
       text-decoration: underline;
     }
 
-    /* Active page link style */
     nav a.active {
-      border-bottom-color: #FFD700; /* gold underline for active page */
+      border-bottom-color: #FFD700;
     }
 
     .content {
@@ -61,10 +60,10 @@
     h1 {
       color: #3A5A40;
       text-align: center;
-      font-size: 3rem; /* bigger size, adjust as you like */
-      margin-bottom: 0.3em; /* optional spacing below */
+      font-size: 3rem;
+      margin-bottom: 0.3em;
     }
-    
+
     h2 {
       color: #3A5A40;
     }
@@ -72,12 +71,12 @@
     .subtitle {
       text-align: center;
     }
-    
+
     .intro {
       text-align: center;
       margin-bottom: 2em;
     }
-   
+
     a {
       color: #007acc;
       text-decoration: none;
@@ -96,21 +95,26 @@
   </style>
 </head>
 <body>
-<nav>
-  <div class="container">
-    <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html" class="active">Contact</a>
-  </div>
-</nav>
 
-  <h1>Contact Me</h1>
-  <p>You can reach me at <a href="mailto:ms5314@georgetown.edu">ms5314@georgetown.edu</a>.</p>
-  <p>Follow me on X <a href="https://twitter.com/melindasomerss">@melindasomerss</a>.</p>
+  <nav>
+    <div class="container">
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <!-- All page content wrapped in a padded container -->
+  <div class="content">
+    <h1>Contact Me</h1>
+    <p>You can reach me at <a href="mailto:ms5314@georgetown.edu">ms5314@georgetown.edu</a>.</p>
+    <p>Follow me on X <a href="https://twitter.com/melindasomerss">@melindasomerss</a>.</p>
+  </div>
 
   <footer>
     &copy; 2025 Melinda Somers
   </footer>
+
 </body>
 </html>
 
