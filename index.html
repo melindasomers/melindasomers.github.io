@@ -102,6 +102,38 @@
     a:hover {
       text-decoration: underline;
     }
+
+.photo-gallery {
+  max-width: 1000px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.photo-gallery h2 {
+  color: #3A5A40;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+    
   </style>
 </head>
 <body>
@@ -129,6 +161,18 @@
     </div>
   </div>
 
+  <!-- Photo Gallery -->
+<div class="photo-gallery">
+  <div class="gallery-grid">
+    <img src="APS.jpg" alt="Photo 1">
+    <img src="SPSP.jpg" alt="Photo 2">
+    <img src="meandkeely.jpg" alt="Photo 3">
+    <img src="seniordefense.jpg" alt="Photo 3">
+    <!-- Add more photos as needed -->
+  </div>
+</div>
+
+  
   <footer>
     &copy; 2025 Melinda Somers
   </footer>
